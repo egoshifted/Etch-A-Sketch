@@ -1,7 +1,5 @@
 /* RESET */
 
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,37 +21,3 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-.container {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    
-}    
-
-.cell {
-    border: 1px solid black;
-    width: 16px;
-    height: 16px;
-    transition: 0.7, ;
-}
-
-.cell:hover {
-    background-color: black;
-}
-
-.clicked {
-background-color: black;
-}

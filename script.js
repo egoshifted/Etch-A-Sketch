@@ -2,6 +2,7 @@ const body = document.body
 const container = document.querySelector(".container")
 const div = document.querySelector("div")
 const button = document.button
+const wrapper = document.querySelector(".wrapper")
 
 let inputCells = 0; // keeps track of the user input
 let numOfCells = 0; // keeps track of how many cells there are
@@ -32,11 +33,8 @@ const addColumns = () => {
     for(i = numOfCells; i > 0 + 1; i--) {
     const clonedRows = document.querySelector(".container")
     const clone = clonedRows.cloneNode(true);
-    body.append(clone);
+    wrapper.append(clone);
     }
 }
 
-// Changes cell color when clicked
-const cell = document.querySelector(".cell")
-cell.addEventListener("click", clickedCell);
-let clickedCell = () => cell.classList.add('.clicked');
+
