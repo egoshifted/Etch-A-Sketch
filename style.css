@@ -39,4 +39,10 @@ body {
 
 .grid-element {
 	border: 1px solid black;
+	
 }
+
+.grid-element:hover {
+	background-color: aquamarine;
+}
+
