@@ -9,15 +9,21 @@
     <title>Etch-a-Sketch Project</title>
 </head>
 <body>
-    <div id="inputText">Number of cells</div>
     
+    <div id="grid">
+    <div class="grid-element"></div>
+    <div class="grid-element"></div>
+    <div class="grid-element"></div>
+    <div class="grid-element"></div>
+    </div>
+    
+    <div class="nav">
+    <div id="inputText">Grid size</div>   
     <div id="range"><input type="range" min="4" max="50" value="4" class="slider" id="myRange"></div>
-   
-    <div id="wrapper">
-    <div class="grid-element"></div>
-    <div class="grid-element"></div>
-    <div class="grid-element"></div>
-    <div class="grid-element"></div>
-   </div>
+    <button id="clearBtn">Clear</button>
+    </div>    
+
+
+
 </body>
 </html>

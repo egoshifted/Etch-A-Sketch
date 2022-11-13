@@ -24,12 +24,15 @@ time, mark, audio, video {
 body {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	margin-top: auto;
 	
 }
 
-#wrapper {
+#grid{
 	display: grid;
-	background-color: red;
+	background-color: black;
 	height: 500px;
 	width: 500px;
 	grid-template-columns: repeat(2, 1fr); 
@@ -38,11 +41,18 @@ body {
 }
 
 .grid-element {
-	border: 1px solid black;
+	border: 1px solid white;
 	
 }
 
 .grid-element:hover {
-	background-color: aquamarine;
+	background-color: white;
 }
 
+.nav {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	justify-content: center;
+	align-items: center;
+}
