@@ -1,8 +1,4 @@
 const defaultSize = 4;
-
-let currentSize = defaultSize
-
-
 const slider = document.getElementById("myRange");
 const sliderInt = parseInt(slider.value);
 const inputText = document.getElementById("inputText");
@@ -10,7 +6,7 @@ const grid = document.getElementById("grid");
 const body = document.body;
 const clearBtn = document.getElementById("clearBtn")
 
-clearBtn.onclick = () => clearGrid()
+clearBtn.onclick = () => defaultGrid();
 
 // Clears grid of all cells
 let clearGrid = () => {
@@ -44,3 +40,5 @@ window.onload = () => {
     gridSetting(defaultSize);
 }
 
+// Sets default grid size to 4
+let defaultGrid = () => gridSetting(defaultSize);

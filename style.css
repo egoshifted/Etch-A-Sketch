@@ -32,21 +32,21 @@ body {
 
 #grid{
 	display: grid;
-	background-color: black;
+	background-color: white;
 	height: 500px;
 	width: 500px;
 	grid-template-columns: repeat(2, 1fr); 
 	grid-template-rows: repeat(2, 1fr);
+	border: 1px solid black;
 		
 }
 
 .grid-element {
-	border: 1px solid white;
-	
+	border: 1px solid black;
 }
 
 .grid-element:hover {
-	background-color: white;
+	background-color: black;
 }
 
 .nav {
@@ -56,3 +56,65 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+#black-white {
+	display: flex;
+	width: 500px;
+	height: 25px;
+	margin-top: 25px;
+	justify-content: center;
+	text-align: center;
+	}
+
+#black {
+	background-color: black;
+	color: white;
+	padding-top: 2px;
+}
+
+#white {
+	background-color: white;
+	color: black;
+	padding-top: 2px;
+}
+
+#colours {
+	margin-top: 5px;
+	display: flex;
+	width: 500px;
+	height: 25px;
+	}
+
+.colours-cell {
+	border: 1px solid black;
+	width: 100px;
+}
+
+#red {
+	background-color: red;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#yellow {
+	background-color: yellow;
+}
+
+#green {
+	background-color: green;
+}
+
+#aquamarine {
+	background-color: rgb(127, 255, 244);
+}
+
+#blue {
+	background-color: blue;
+}
+
+#purple {
+	background-color: purple;
+}
+
