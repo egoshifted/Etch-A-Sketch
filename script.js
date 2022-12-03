@@ -27,6 +27,7 @@ let currentValueText = () => {
 slider.addEventListener("input", currentValueText);
 
 
+// Set up a new grid, add event listers to each cell
 function gridSetting(size) {
     clearGrid();
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`

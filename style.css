@@ -42,12 +42,9 @@ body {
 }
 
 .grid-element {
-	
-}
-
-.grid-element:hover {
-	background-color: black;
-}
+	user-select: none;
+  }
+  
 
 .nav {
 	display: flex;
