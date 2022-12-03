@@ -1,16 +1,17 @@
 const defaultSize = 4;
-const slider = document.getElementById("myRange");
-const sliderInt = parseInt(slider.value);
-const inputText = document.getElementById("inputText");
-const grid = document.getElementById("grid");
+const slider = document.getElementById("myRange")
+const sliderInt = parseInt(slider.value)
+const inputText = document.getElementById("inputText")
+const grid = document.getElementById("grid")
 const body = document.body;
 const clearBtn = document.getElementById("clearBtn")
+const picker = document.getElementById("picker")
 let currentColour = "black"
-let mouseDown = false;
+let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
 
-clearBtn.onclick = () => defaultGrid();
+clearBtn.onclick = () => defaultGrid()
 
 // Clears grid of all cells
 let clearGrid = () => {
@@ -45,7 +46,7 @@ function gridSetting(size) {
 // Applies colour to the target cell
 function applyColour(e) {
     if (e.type === 'mouseover' && !mouseDown) return
-    e.target.style.backgroundColor = currentColour
+    e.target.style.backgroundColor = picker.value
 }
 
 // Sets grid size to default on window load

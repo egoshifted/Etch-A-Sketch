@@ -23,9 +23,10 @@ time, mark, audio, video {
 
 body {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
 	margin: 0 auto;
 	align-items: center;
+	justify-content: center;
 	margin-top: auto;
 	background-color:whitesmoke;
 	}
@@ -36,7 +37,7 @@ body {
 	align-items: center;
 	}
 #nav > * {
-	padding: 10px;
+	padding: 5px;
 }
 
 #grid{
@@ -59,5 +60,25 @@ button {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border: none;
 	font-size: large;
+	border-radius: 5px;
 	
 }
+
+  input[type='color'] {
+	-webkit-appearance: none;
+	width: 80px;
+	height: 80px;
+	border: none;
+	background-color: whitesmoke;
+	margin-top: 10px;
+  }
+  
+  input[type='color']::-webkit-color-swatch-wrapper {
+	padding: 0;
+  }
+  
+  input[type='color']::-webkit-color-swatch {
+	border: none;
+	border-radius: 40px;
+	background-color: whitesmoke;
+	}
