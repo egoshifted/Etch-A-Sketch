@@ -5,6 +5,10 @@ const inputText = document.getElementById("inputText");
 const grid = document.getElementById("grid");
 const body = document.body;
 const clearBtn = document.getElementById("clearBtn")
+let currentColour = "black"
+let mouseDown = false;
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
 
 clearBtn.onclick = () => defaultGrid();
 
@@ -30,9 +34,17 @@ function gridSetting(size) {
     for (let i = 0; i < size * size; i++) {
         const gridElement = document.createElement('div')
         gridElement.classList.add('grid-element')
+        gridElement.addEventListener('mouseover', applyColour)
+        gridElement.addEventListener('mousedown', applyColour)
         grid.appendChild(gridElement);
     }
        
+}
+
+// Applies colour to the target cell
+function applyColour(e) {
+    if (e.type === 'mouseover' && !mouseDown) return
+    e.target.style.backgroundColor = currentColour
 }
 
 // Sets grid size to default on window load
