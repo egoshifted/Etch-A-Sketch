@@ -17,7 +17,7 @@ let clearGrid = () => {
     grid.innerHTML = ''
     }
 
-// Insert current range slider value in the the inputText div
+// Insert current range slider value in the the inputText div and sets the grid to the current selected size
 let currentValueText = () => {
     inputText.textContent = `Grid size is ${slider.value} x ${slider.value}`;
     slider.addEventListener("input", gridSetting(slider.value));
@@ -54,4 +54,9 @@ window.onload = () => {
 }
 
 // Sets default grid size to 4
-let defaultGrid = () => gridSetting(defaultSize);
+function defaultGrid() {
+    gridSetting(defaultSize);
+    slider.value = defaultSize;
+    inputText.textContent = `Grid size is ${slider.value} x ${slider.value}`;
+
+}
